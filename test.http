@@ -1,0 +1,51 @@
+@host = http://127.0.0.1:3001
+@contactId = 1
+
+### Список контактов
+GET {{host}}/api/contacts
+
+### Создание контакта. Укажите id из ответа в contactId для следующих запросов
+POST {{host}}/api/contacts
+Content-Type: application/json
+
+{
+  "full_name": "Ёлкина Анна",
+  "phone": "+7 (900) 111-22-33",
+  "email": "anna@example.com",
+  "notes": "Связаться в рабочее время."
+}
+
+### Поиск по номеру, буква Ё и пагинация
+GET {{host}}/api/contacts?q=900111&letter=%D0%81&page=1&limit=5
+
+### Поиск по имени без учёта регистра
+GET {{host}}/api/contacts?q=%D1%91%D0%BB%D0%BA
+
+### Получение карточки
+GET {{host}}/api/contacts/{{contactId}}
+
+### Редактирование и очистка заметки
+PUT {{host}}/api/contacts/{{contactId}}
+Content-Type: application/json
+
+{
+  "full_name": "Ёлкина Анна",
+  "phone": "+7 (900) 555-22-33",
+  "email": "anna@example.com",
+  "notes": null
+}
+
+### Ошибка 400 при неверном email
+POST {{host}}/api/contacts
+Content-Type: application/json
+
+{ "full_name": "Анна", "email": "anna@" }
+
+### Ошибка 400 при неверном номере страницы
+GET {{host}}/api/contacts?page=0
+
+### Удаление с ответом 204
+DELETE {{host}}/api/contacts/{{contactId}}
+
+### Ошибка 404 после удаления
+GET {{host}}/api/contacts/{{contactId}}

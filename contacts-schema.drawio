@@ -1,0 +1,94 @@
+<mxfile host="app.diagrams.net" compressed="false">
+  <diagram id="contacts-sqlite" name="Схема БД">
+    <mxGraphModel dx="1016" dy="645" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="840" pageHeight="560" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="page-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacing=0;fontFamily=Georgia;fontSize=32;fontStyle=1;fontColor=#3B2A22;" value="Схема базы данных" vertex="1">
+          <mxGeometry height="44" width="680" x="80" y="43" as="geometry" />
+        </mxCell>
+        <mxCell id="page-subtitle" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=17;fontColor=#715747;" value="SQLite · data/contacts.db" vertex="1">
+          <mxGeometry height="28" width="680" x="80" y="93" as="geometry" />
+        </mxCell>
+        <mxCell id="table-fill" connectable="0" parent="1" style="rounded=0;html=1;" value="" vertex="1">
+          <mxGeometry height="350" width="680" x="60" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="table-header" parent="1" style="rounded=0;html=1;align=left;verticalAlign=middle;spacingLeft=24;fontFamily=Georgia;fontSize=27;fontStyle=1;" value="contacts" vertex="1">
+          <mxGeometry height="66" width="680" x="60" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="column-fill" connectable="0" parent="1" style="rounded=0;html=1;" value="" vertex="1">
+          <mxGeometry height="44" width="680" x="60" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="column-field" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=15;fontStyle=1;fontColor=#3B2A22;" value="Поле" vertex="1">
+          <mxGeometry height="44" width="200" x="84" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="column-type" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=15;fontStyle=1;fontColor=#3B2A22;" value="Тип" vertex="1">
+          <mxGeometry height="44" width="128" x="304" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="column-constraints" parent="1" style="text;html=1;align=left;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=15;fontStyle=1;fillColor=none;" value="Ограничения" vertex="1">
+          <mxGeometry height="44" width="264" x="452" y="206" as="geometry" />
+        </mxCell>
+        <mxCell id="id-field" parent="1" style="text;html=1;align=left;verticalAlign=middle;spacing=0;fontFamily=Consolas;fontSize=17;fontStyle=1;" value="id" vertex="1">
+          <mxGeometry height="48" width="200" x="84" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="id-type" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacing=0;fontFamily=Consolas;fontSize=17;fontColor=#3B2A22;" value="INTEGER" vertex="1">
+          <mxGeometry height="48" width="128" x="304" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="id-constraints" parent="1" style="text;html=1;align=left;verticalAlign=middle;spacing=0;fontFamily=Consolas;fontSize=16;fontStyle=1;" value="PRIMARY KEY AUTOINCREMENT" vertex="1">
+          <mxGeometry height="48" width="264" x="452" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="full_name-field" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacing=0;fontFamily=Consolas;fontSize=17;fontColor=#3B2A22;" value="full_name" vertex="1">
+          <mxGeometry height="48" width="200" x="84" y="298" as="geometry" />
+        </mxCell>
+        <mxCell id="full_name-type" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacing=0;fontFamily=Consolas;fontSize=17;fontColor=#3B2A22;" value="TEXT" vertex="1">
+          <mxGeometry height="48" width="128" x="304" y="298" as="geometry" />
+        </mxCell>
+        <mxCell id="full_name-constraints" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacing=0;fontFamily=Consolas;fontSize=16;fontColor=#3B2A22;" value="NOT NULL" vertex="1">
+          <mxGeometry height="48" width="264" x="452" y="298" as="geometry" />
+        </mxCell>
+        <mxCell id="phone-field" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacing=0;fontFamily=Consolas;fontSize=17;fontColor=#3B2A22;" value="phone" vertex="1">
+          <mxGeometry height="48" width="200" x="84" y="346" as="geometry" />
+        </mxCell>
+        <mxCell id="phone-type" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacing=0;fontFamily=Consolas;fontSize=17;fontColor=#3B2A22;" value="TEXT" vertex="1">
+          <mxGeometry height="48" width="128" x="304" y="346" as="geometry" />
+        </mxCell>
+        <mxCell id="phone-constraints" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=16;fontColor=#715747;" value="Допускает NULL" vertex="1">
+          <mxGeometry height="48" width="264" x="452" y="346" as="geometry" />
+        </mxCell>
+        <mxCell id="email-field" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacing=0;fontFamily=Consolas;fontSize=17;fontColor=#3B2A22;" value="email" vertex="1">
+          <mxGeometry height="48" width="200" x="84" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="email-type" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacing=0;fontFamily=Consolas;fontSize=17;fontColor=#3B2A22;" value="TEXT" vertex="1">
+          <mxGeometry height="48" width="128" x="304" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="email-constraints" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=16;fontColor=#715747;" value="Допускает NULL" vertex="1">
+          <mxGeometry height="48" width="264" x="452" y="394" as="geometry" />
+        </mxCell>
+        <mxCell id="notes-field" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacing=0;fontFamily=Consolas;fontSize=17;fontColor=#3B2A22;" value="notes" vertex="1">
+          <mxGeometry height="48" width="200" x="84" y="442" as="geometry" />
+        </mxCell>
+        <mxCell id="notes-type" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacing=0;fontFamily=Consolas;fontSize=17;fontColor=#3B2A22;" value="TEXT" vertex="1">
+          <mxGeometry height="48" width="128" x="304" y="442" as="geometry" />
+        </mxCell>
+        <mxCell id="notes-constraints" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacing=0;fontFamily=Arial;fontSize=16;fontColor=#715747;" value="Допускает NULL" vertex="1">
+          <mxGeometry height="48" width="264" x="452" y="442" as="geometry" />
+        </mxCell>
+        <mxCell id="divider-1" connectable="0" parent="1" style="shape=line;strokeColor=#D9BEA3;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="1" width="632" x="84" y="297" as="geometry" />
+        </mxCell>
+        <mxCell id="divider-2" connectable="0" parent="1" style="shape=line;strokeColor=#D9BEA3;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="1" width="632" x="84" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="divider-3" connectable="0" parent="1" style="shape=line;strokeColor=#D9BEA3;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="1" width="632" x="84" y="393" as="geometry" />
+        </mxCell>
+        <mxCell id="divider-4" connectable="0" parent="1" style="shape=line;strokeColor=#D9BEA3;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="1" width="632" x="84" y="441" as="geometry" />
+        </mxCell>
+        <mxCell id="table-border" connectable="0" parent="1" style="rounded=0;html=1;strokeColor=#D9BEA3;strokeWidth=1;fillColor=none;pointerEvents=0;" value="" vertex="1">
+          <mxGeometry height="350" width="680" x="60" y="140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,6 @@
+node_modules/
+data/*.db
+data/*.db-*
+Web - Лабораторная работа №8.pdf
+package-lock.json
+package.json
