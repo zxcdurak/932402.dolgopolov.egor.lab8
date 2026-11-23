@@ -7,7 +7,7 @@ const { notFound, errorHandler } = require("./middleware/errorHandler");
 
 const app = express();
 const host = "127.0.0.1";
-const port = Number(process.env.PORT || 3001);
+const port = 3002;
 
 app.use(express.static(path.join(__dirname, "public"), { index: false }));
 app.use(pagesRouter);
@@ -16,7 +16,7 @@ app.use(notFound);
 app.use(errorHandler);
 
 const server = app.listen(port, host);
-server.on("listening", () => console.log(`Адресная книга открыта на http://${host}:${server.address().port}`));
+server.on("listening", () => console.log(`Адресная книга открыта на http://${host}:${port}`));
 server.on("error", (error) => {
   console.error(error.message);
   db.close();
